@@ -9,15 +9,15 @@
 estudiantes = {}
 
 # Ingresar las notas de 20 estudiantes
-for i in range(5):
+for i in range(3):
     nombre = input(f"Ingrese el nombre del estudiante {i+1}: ")
     
     # Almacenar las notas de cada estudiante (5 notas)
     notas = []
-    for j in range(5):
+    for x in range(5):
         while True:
             try:
-                nota = float(input(f"Ingrese la nota {j+1} para {nombre} (entre 1 y 10): "))
+                nota = float(input(f"Ingrese la nota {x+1} para {nombre} (entre 1 y 10): "))
                 if 1 <= nota <= 10:
                     notas.append(nota)
                     break
@@ -38,7 +38,7 @@ for i in range(5):
         "notas": notas,
         "nota_maxima": nota_maxima,
         "nota_minima": nota_minima,
-        "nota_final": round(nota_final, 2)
+        "nota_final": round(nota_final, 2)  
     }
 
 # Mostrar los resultados
